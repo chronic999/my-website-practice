@@ -1,0 +1,154 @@
+/* Fonts List
+    Nav Link Font
+    font-family: 'Damion', cursive;
+
+    Logo Font
+    font-family: 'Silkscreen', cursive;
+
+    Hero image Font
+    font-family: 'Rubik Burned', cursive;
+
+    Main Site Text Font
+    font-family: 'Ubuntu Condensed', sans-serif;
+ */
+
+ /* Body Style */
+body {
+    background-image: linear-gradient(20deg, rgb(22, 22, 22), rgb(8, 8, 8), rgb(0, 0, 0));
+    min-height: 100vh;
+    margin: 0;
+}
+@media only screen and (max-width: 320px) {
+    body {
+        min-height: 110vh;
+    }
+}
+
+/* Navigation Bar,
+    Styles, fonts, sizes, etc */
+.topnav {
+    background: linear-gradient(60deg, rgb(34, 34, 34), rgb(58, 58, 58), rgb(47, 47, 47));
+    height: 60px;
+    display: inline-flex;
+    min-width: 100%;
+    flex-direction: row;
+}
+.topnav h1{
+    font-size: 2.5vh;
+    color: red;
+    font-family: 'Silkscreen', cursive;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 1.5vh;
+}
+@media only screen and (max-width: 340px) {
+    .topnav h1 {
+        padding-left: 1.4vh;
+        padding-right: 1vh;
+    }
+}
+.topnav a {
+    padding-right: 2vh;
+    color: rgb(170, 170, 170);
+    font-size: 2.2vh;
+    font-family: 'Damion', cursive;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration-line: none;
+}
+.topnav a:hover {
+    color: rgb(237, 237, 237);
+}
+.topnav a.active {
+    color: rgb(255, 255, 255);
+}
+
+/* Webpage Intro and Nav Links */
+.intro-hdr-col {
+    background-image: linear-gradient(75deg,rgba(0, 0, 0, 0.708), rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.75)), url("images/ovoid.png");
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    color: rgb(188, 224, 255);
+    margin-top: 8vh;
+    padding: 1.5vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+
+}
+.intro-hdr-col h1{
+    text-align: left;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 3vh;
+    font-family: 'Damion', cursive;
+    font-weight: 300;
+    overflow: hidden;
+    text-shadow: 0px 2px 4px black;
+}
+.intro-hdr-col h2 {
+    text-align: center;
+    font-size: 10vh;
+    font-family: 'Rubik Burned', cursive;
+    font-weight: 300;
+    color: rgb(255, 0, 0);
+    margin-bottom: 3vh;
+    margin-top: 5vh;
+}
+@media only screen and (max-width: 500px) {
+    .intro-hdr-col h2 {
+        font-size: 6.5vh;
+    }
+  }
+.intro-hdr-col h3{
+    line-height: 2;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 3.3vh;
+    text-shadow: 0px 2px 4px black;
+}
+.intro-hdr-col p{
+    font-size: 2.1vh;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-shadow: 0px 2px 4px black;
+}
+.contact-btn {
+    background-color: black;
+    color: rgb(222, 240, 255);
+    border: 2px solid rgb(105, 14, 14);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 2.3vh;
+    font-family: 'Damion', cursive;
+    box-shadow: 0px 2px 4px rgb(83, 37, 37);
+    margin-bottom: 2.5vh;
+}
+.contact-btn:hover {
+    filter: brightness(1.5);
+    cursor: pointer;
+    font-weight: 100;
+    box-shadow: 0px 3px 8px rgb(50, 22, 22);
+}
+.contact-btn a{
+    text-decoration: none;
+    color: rgb(222, 240, 255);
+}
+
+/* Special Glowing Box Shadow "Neon Effect" */
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 2px #fff, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #bd0000, 0 0 25px #5d0101, 0 0 30px #5d0101, 0 0 35px #310000;
+    }
+    to {
+      box-shadow: 0 0 12px #fff, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #bd0000, 0 0 30px #bd0000, 0 0 35px #5d0101, 0 0 40px #310000;
+    }
+  }

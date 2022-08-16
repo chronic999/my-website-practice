@@ -1,0 +1,84 @@
+/* CSS Font Lists imported from fonts.google.com
+    Nav Link Font
+    font-family: 'Damion', cursive;
+
+    Logo Font
+    font-family: 'Silkscreen', cursive;
+
+    Hero image Font
+    font-family: 'Rubik Burned', cursive;
+
+    Main Site Text Font
+    font-family: 'Ubuntu Condensed', sans-serif;
+ */
+
+
+/* Body class, background color, etc */
+body {
+    background-image: linear-gradient(20deg, rgb(22, 22, 22), rgb(8, 8, 8), rgb(0, 0, 0));
+    min-height: 100vh;
+    margin: 0;
+}
+@media only screen and (max-width: 320px) {
+    body {
+        min-height: 110vh;
+    }
+}
+
+    /* Navigation Bar,
+    Styles, fonts, sizes, etc */
+.topnav {
+        background: linear-gradient(60deg, rgb(34, 34, 34), rgb(58, 58, 58), rgb(47, 47, 47));
+        height: 60px;
+        display: inline-flex;
+        min-width: 100%;
+        flex-direction: row;
+    }
+.topnav h1{
+        font-size: 2.5vh;
+        color: red;
+        font-family: 'Silkscreen', cursive;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-left: 1.5vh;
+    }
+@media only screen and (max-width: 340px) {
+        .topnav h1 {
+            padding-left: 1.4vh;
+            padding-right: 1vh;
+        }
+    }
+.topnav a {
+        padding-right: 2vh;
+        color: rgb(170, 170, 170);
+        font-size: 2.2vh;
+        font-family: 'Damion', cursive;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-decoration-line: none;
+    }
+.topnav a:hover {
+        color: rgb(237, 237, 237);
+    }
+.topnav a.active {
+        color: rgb(255, 255, 255);
+    }
+
+    /* Main Contact information Col */
+.contact-form {
+        color: rgb(92, 0, 0);
+        text-align: center;
+        margin-top: 4vh;
+        font-family: 'Rubik Burned', cursive;
+        font-size: 2vh;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1vh;
+        background-image: linear-gradient(25deg, rgb(118, 118, 118), rgb(248, 248, 248), rgb(177, 177, 177));
+        border-radius: 50px;
+        border: 3px solid rgb(96, 96, 96);
+        box-shadow: 0px -2px 6px rgb(99, 99, 99);
+    }
