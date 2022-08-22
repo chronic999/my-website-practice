@@ -16,11 +16,14 @@
 body {
     background-image: linear-gradient(20deg, rgb(22, 22, 22), rgb(8, 8, 8), rgb(0, 0, 0));
     min-height: 100vh;
+    width: 100%;
     margin: 0;
 }
 @media only screen and (max-width: 320px) {
     body {
         min-height: 110vh;
+        margin: 0;
+        min-width: 100%;
     }
 }
 
@@ -29,11 +32,11 @@ body {
 .topnav {
     background: linear-gradient(60deg, rgb(34, 34, 34), rgb(58, 58, 58), rgb(47, 47, 47));
     height: 60px;
-    display: inline-flex;
     min-width: 100%;
+    display: inline-flex;
     flex-direction: row;
 }
-.topnav h1{
+.topnav h1 {
     font-size: 2.5vh;
     color: red;
     font-family: 'Silkscreen', cursive;
@@ -110,13 +113,13 @@ body {
         font-size: 6.5vh;
     }
   }
-.intro-hdr-col h3{
+.intro-hdr-col h3 {
     line-height: 2;
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 3.3vh;
     text-shadow: 0px 2px 4px black;
 }
-.intro-hdr-col p{
+.intro-hdr-col p {
     font-size: 2.1vh;
     font-family: 'Ubuntu Condensed', sans-serif;
     text-shadow: 0px 2px 4px black;
@@ -152,3 +155,52 @@ body {
       box-shadow: 0 0 12px #fff, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #bd0000, 0 0 30px #bd0000, 0 0 35px #5d0101, 0 0 40px #310000;
     }
   }
+
+  /* About Container Class */
+
+.about-container {
+    background-image: linear-gradient(80deg, rgb(58, 7, 7), black, rgb(125, 31, 31));
+    margin-top: 6vh;
+    color: white;
+    padding: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+@media only screen and (max-width: 450px) {
+    .about-container {
+       width: 100%;
+       border-radius: 0px;
+    }
+}
+.about-container h1 {
+    text-align: center;
+    font-family: 'Damion', cursive;
+    font-size: 4vh;
+    margin-bottom: 5px;
+}
+.about-container h2 {
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 2vh;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    
+}
+.about-container p {
+    text-align: center;
+    font-size: 2.2vh;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.about-list {
+    padding: 20px;
+    text-align: center;
+}
+.about-list li {
+    display: inline-flex;
+    padding: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Silkscreen', cursive;
+}

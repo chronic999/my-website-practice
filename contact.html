@@ -11,12 +11,24 @@
     <div class="topnav">
         <h1>Hutshi Labs</h1>
         <a href="index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="#gallery">Galleries</a>
+        <a href="form.html">About</a>
+        <a href="gallery.html">Galleries</a>
         <a href="#jobs">Services</a>
     </div>
     <div class="contact-form">
-        <h1><a>Email</a></h1>
+        <form action="mailto:cal.smith946@gmail.com" method="post" enctype="text/plain">
+            <h1><a>Contact Form</a></h1><hr>
+            <h2>First Name: <input type="text" id="fname" placeholder="First Name" required/></h2>
+            <h3>Last Name: <input type="text" id="lname" placeholder="Last Name" required/></h3>
+            <h4>UserEmail: <input type="email" id="email" name="email" placeholder="Email" required/></h4>
+            <h5>Subject: <input type="text" name="subject" id="subject" placeholder="Subject" required> </h5>
+            <h5>Message:</h5>
+            <textarea rows="7" cols="40" name="message"></textarea>
+            
+            <p>500 characters max</p><hr>
+            <input type="submit" name="submit" id="submit">
+        </form>
+        
     </div>
     <style>
      @import url('https://fonts.googleapis.com/css2?family=Damion&family=Rubik+Burned&family=Silkscreen&family=Ubuntu+Condensed&display=swap');
