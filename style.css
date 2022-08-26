@@ -67,18 +67,22 @@ body {
 .topnav a.active {
     color: rgb(255, 255, 255);
 }
+.topnav i {
+    color: aliceblue;
+}
 
 /* Webpage Intro and Nav Links */
 .intro-hdr-col {
     background-image: linear-gradient(75deg,rgba(0, 0, 0, 0.708), rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.75)), url("images/ovoid.png");
     margin-left: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     margin-right: auto;
     width: 75%;
     text-align: center;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 15px;
     color: rgb(188, 224, 255);
-    margin-top: 8vh;
     padding: 1.5vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,7 +119,7 @@ body {
   }
 .intro-hdr-col h3 {
     line-height: 2;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Silkscreen', cursive;
     font-size: 3.3vh;
     text-shadow: 0px 2px 4px black;
 }
@@ -145,6 +149,12 @@ body {
     text-decoration: none;
     color: rgb(222, 240, 255);
 }
+.contact-btn a:hover{
+    text-decoration: none;
+    
+    color: rgb(151, 188, 219);
+    filter: brightness(1.2);
+}
 
 /* Special Glowing Box Shadow "Neon Effect" */
   @keyframes glow {
@@ -160,13 +170,15 @@ body {
 
 .about-container {
     background-image: linear-gradient(80deg, rgb(58, 7, 7), black, rgb(125, 31, 31));
-    margin-top: 6vh;
+    margin-top: 8vh;
+    margin-bottom: 6vh;
     color: white;
     padding: 10px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
+    box-shadow: 1px -1px 2px rgb(24, 24, 24);
 }
 @media only screen and (max-width: 450px) {
     .about-container {

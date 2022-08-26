@@ -1,0 +1,196 @@
+/* Fonts List
+    Nav Link Font
+    font-family: 'Damion', cursive;
+
+    Logo Font
+    font-family: 'Silkscreen', cursive;
+
+    Hero image Font
+    font-family: 'Rubik Burned', cursive;
+
+    Main Site Text Font
+    font-family: 'Ubuntu Condensed', sans-serif;
+ */
+
+ /* Body Style */
+ body {
+    background-image: linear-gradient(20deg, rgb(22, 22, 22), rgb(8, 8, 8), rgb(0, 0, 0));
+    min-height: 100vh;
+    min-width: 100%;
+    margin: 0;
+}
+@media only screen and (max-width: 320px) {
+    body {
+        min-height: 110vh;
+        margin: 0;
+        min-width: 100%;
+    }
+}
+
+/* Navigation Bar,
+    Styles, fonts, sizes, etc */
+.topnav {
+ height: 6vh;
+    min-width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+}
+.topnav h1 {
+    font-size: 2.5vh;
+    color: red;
+    font-family: 'Silkscreen', cursive;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 1.5vh;
+    text-shadow: 0px 1px 2px white;
+}
+@media only screen and (max-width: 340px) {
+    .topnav h1 {
+        padding-left: 1.4vh;
+        padding-right: 1vh;
+    }
+}
+.topnav a {
+    padding-right: 2vh;
+    color: rgb(170, 170, 170);
+    font-size: 2.2vh;
+    font-family: 'Damion', cursive;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration-line: none;
+}
+.topnav a:hover {
+    color: rgb(237, 237, 237);
+}
+.topnav a.active {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px rgb(101, 101, 101);
+}
+.topnav i {
+    color: aliceblue;
+}
+hr.topnav-bdr {
+    height: 0.2vh;
+    border-style: none;
+    width: 100%;
+    background-image: linear-gradient(90deg, white, black, white, black, white);
+}
+/* Gallery Grid Style */
+
+.gallery-grid {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.gallery-grid h1 {
+    color: aliceblue;
+    font-family: 'Damion', cursive;
+    font-size: 6vh;
+    font-weight: 500;
+    text-shadow: 0 2px 5px grey;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery-grid p {
+    color: rgb(121, 121, 121);
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 2.4vh;
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+}
+.gallery-grid img {
+    height: 25vh;
+    width: 25vh;
+    margin: 5vh 10vh 10vh;
+    border-radius: 20px;
+    padding: 6px;
+    background-image: linear-gradient(75deg, rgb(6, 6, 6), white, rgb(10, 10, 10));
+    box-shadow: 0 2px 8px rgb(60, 60, 60);
+}
+.gallery-grid img:hover{
+    filter: brightness(1.2);
+    box-shadow: 0 5px 8px rgb(60, 60, 60);
+    cursor: pointer;
+}
+
+/* Demo Sites for Customers */
+
+.demo-gal-col {
+    text-align: center;
+    margin-bottom: 5vh;
+    padding-bottom: 2vh;
+    border-radius: 2%;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(180, 180, 180), rgb(32, 32, 32));
+}
+.demo-gal-col i {
+    color: black;
+    size: 2vh;
+    padding: 3vh;
+}
+.demo-gal-col a {
+    font-family: 'Silkscreen', cursive;
+    text-decoration: none;
+    color: azure;
+    text-shadow: 0px -1px 3px black;
+}
+.demo-gal-col h1 {
+    color: aliceblue;
+    font-family: 'Damion', cursive;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgb(0, 0, 0);
+    font-size: 4.4vh;
+    padding-top: 2vh;
+    padding: 1vh;
+}
+button.collapsible {
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(180, 180, 180), rgb(32, 32, 32));
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 2px 4px black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 2.6vh;
+    font-family: 'Ubuntu Condensed', sans-serif;
+  }
+  
+  button.active, button.collapsible:hover {
+    filter: brightness(1.2);
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    color: aliceblue;
+  }
+  .content p {
+    font-size: 1.8vh;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: aliceblue;
+    text-shadow: 0px -1px 2px black;
+  }
+  .collapsible:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  button.active:after {
+    content: "\2796";
+  }
+  hr.button-div {
+    height: 2px;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(180, 180, 180), rgb(32, 32, 32));
+    border-style: none;
+    width: 80%;
+    border: none;
+  }
+  
+  
