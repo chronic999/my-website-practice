@@ -30,11 +30,12 @@ body {
 /* Navigation Bar,
     Styles, fonts, sizes, etc */
 .topnav {
-    background: linear-gradient(60deg, rgb(34, 34, 34), rgb(58, 58, 58), rgb(47, 47, 47));
-    height: 60px;
+    max-height: 7vh;
+    min-height: 5.5vh;
     min-width: 100%;
     display: inline-flex;
     flex-direction: row;
+    background-image: linear-gradient(rgb(0, 0, 0) 10%, rgb(32, 32, 32)60%, rgb(0, 0, 0) 100%);
 }
 .topnav h1 {
     font-size: 2.5vh;
@@ -45,6 +46,8 @@ body {
     margin-right: auto;
     text-align: center;
     padding-left: 1.5vh;
+    text-shadow: 0px 1px 2px white;
+    padding-bottom: 2px;
 }
 @media only screen and (max-width: 340px) {
     .topnav h1 {
@@ -63,22 +66,32 @@ body {
 }
 .topnav a:hover {
     color: rgb(237, 237, 237);
+    text-decoration: none;
 }
 .topnav a.active {
     color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 2px rgb(101, 101, 101);
+    text-decoration: none;
 }
 .topnav i {
     color: aliceblue;
+}
+hr.topnav-bdr {
+    height: 0.2vh;
+    border-style: none;
+    width: 100%;
+    background-image: linear-gradient(90deg, white, black, white, black, white);
+    margin: 0;
 }
 
 /* Webpage Intro and Nav Links */
 .intro-hdr-col {
     background-image: linear-gradient(75deg,rgba(0, 0, 0, 0.708), rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.75)), url("images/ovoid.png");
     margin-left: auto;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
     margin-right: auto;
-    width: 75%;
+    width: 80%;
     text-align: center;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 15px;
@@ -155,29 +168,67 @@ body {
     color: rgb(151, 188, 219);
     filter: brightness(1.2);
 }
+/* Gallery Grid Style */
+
+.gallery-grid {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15vh;
+}
+.gallery-grid h1 {
+    color: aliceblue;
+    font-family: 'Damion', cursive;
+    font-size: 6vh;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery-grid p {
+    color: rgb(121, 121, 121);
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 2.4vh;
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+}
+.gallery-grid img {
+    height: 25vh;
+    width: 25vh;
+    margin: 5vh 10vh 10vh;
+    border-radius: 20px;
+    padding: 6px;
+    background-image: linear-gradient(75deg, rgb(6, 6, 6), white, rgb(10, 10, 10));
+    box-shadow: 0 2px 8px rgb(60, 60, 60);
+}
+.gallery-grid img:hover{
+    filter: brightness(1.2);
+    box-shadow: 0 5px 8px rgb(60, 60, 60);
+    cursor: pointer;
+}
+
 
 /* Special Glowing Box Shadow "Neon Effect" */
-  @keyframes glow {
+@keyframes glow {
     from {
       box-shadow: 0 0 2px #fff, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #bd0000, 0 0 25px #5d0101, 0 0 30px #5d0101, 0 0 35px #310000;
     }
     to {
       box-shadow: 0 0 12px #fff, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #bd0000, 0 0 30px #bd0000, 0 0 35px #5d0101, 0 0 40px #310000;
     }
-  }
+}
 
   /* About Container Class */
 
 .about-container {
     background-image: linear-gradient(80deg, rgb(58, 7, 7), black, rgb(125, 31, 31));
-    margin-top: 8vh;
-    margin-bottom: 6vh;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
     color: white;
-    padding: 10px;
-    width: 90%;
+    padding: 2vh;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: 1px -1px 2px rgb(24, 24, 24);
 }
 @media only screen and (max-width: 450px) {
@@ -189,7 +240,7 @@ body {
 .about-container h1 {
     text-align: center;
     font-family: 'Damion', cursive;
-    font-size: 4vh;
+    font-size: 5vh;
     margin-bottom: 5px;
 }
 .about-container h2 {
@@ -202,8 +253,9 @@ body {
 }
 .about-container p {
     text-align: center;
-    font-size: 2.2vh;
+    font-size: 3vh;
     font-family: 'Ubuntu Condensed', sans-serif;
+    padding: 3vh;
 }
 .about-list {
     padding: 20px;
@@ -215,4 +267,263 @@ body {
     margin-right: auto;
     margin-left: auto;
     font-family: 'Silkscreen', cursive;
+    font-size: 2.5vh;
+}
+/* Demo Sites for Customers */
+
+.demo-gal-col {
+    text-align: center;
+    margin-top: 25vh;
+    margin-bottom: 20vh;
+    padding-bottom: 2vh;
+    border-radius: 2%;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(180, 180, 180), rgb(32, 32, 32));
+}
+.demo-gal-col p {
+    color: aliceblue;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 2vh;
+    text-shadow: 0px 0px 4px black;
+}
+.demo-gal-col i {
+    color: black;
+    size: 2vh;
+    padding: 3vh;
+}
+.demo-gal-col a {
+    font-family: 'Silkscreen', cursive;
+    text-decoration: none;
+    color: azure;
+    text-shadow: 0px -1px 3px black;
+}
+.demo-gal-col a:hover, a:active {
+    color: #ff0000;
+    filter: brightness(1.2);
+}
+.demo-gal-col h1 {
+    color: aliceblue;
+    font-family: 'Damion', cursive;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px rgb(0, 0, 0);
+    font-size: 4.4vh;
+    padding-top: 2vh;
+    padding: 1vh;
+}
+button.collapsible {
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(180, 180, 180), rgb(32, 32, 32));
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 2px 4px black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 2.6vh;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+  
+button.active, button.collapsible:hover {
+    filter: brightness(1.2);
+    color: #ff0000;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    color: aliceblue;
+}
+.content p {
+    font-size: 1.8vh;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: aliceblue;
+    text-shadow: 0px -1px 2px black;
+}
+.collapsible:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+button.active:after {
+    content: "\2796";
+}
+hr.button-div {
+    height: 2px;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(180, 180, 180), rgb(32, 32, 32));
+    border-style: none;
+    width: 80%;
+    border: none;
+}
+  
+ /* Profile Cards Design and Layout Styles */ 
+
+.profile-cards-grid {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+/* Founder profile Card */
+.profile-card {
+    width: 25%;
+    min-height: 50vh;
+    margin-right: auto;
+    margin-left: auto;
+    background: #310000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 2vh;
+    margin-top: 5vh;
+}
+/* Team Member Profile Cards */
+.team-profile-cards {
+    width: 20%;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    background: #310000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    display: inline-block;
+    vertical-align: top;
+}
+@media only screen and (max-width: 850px) {
+    .team-profile-cards, .profile-card {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .team-profile-cards, .profile-card {
+        width: 35vh;
+    }
+}
+.team-profile-cards h2{
+    color: #bd0000;
+    font-size: 3vh;
+    font-family: 'Silkscreen', cursive;
+}
+
+/* Official Affiliate Links and Logos */
+.afil-link-col {
+    color: #ff0000;
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+    margin-top: 20vh;
+    text-align: center;
+    margin-bottom: 15vh;
+}
+.afil-link-col h1 {
+    margin-bottom: 5vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Damion', cursive;
+}
+.ofc-afil-link {
+    display: inline-block;
+    vertical-align: top;
+}
+.ofc-afil-link img {
+    width: 15vh;
+    height: 15vh;
+    border-style: dashed;
+    border-radius: 50%;
+    color: #bd0000;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+}
+@media only screen and (max-width: 450px) {
+    .ofc-afil-link img {
+        width: 9vh;
+        height: 9vh;
+        margin: 4vh;
+    }
+    
+}
+.ofc-afil-link h3 {
+    font-size: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Silkscreen', sans-serif;
+    width: 15vh;
+}
+.afil-link-col img:hover {
+    color: #ff0000;
+}
+
+/* Foooter Col Layout and Design */
+
+.footer-col {
+    background-image: linear-gradient(20deg, rgb(0, 0, 0), rgb(50, 50, 50), rgb(87, 87, 87));
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: 0;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 6px black;
+    box-shadow: 0px -2px 5px rgb(111, 111, 111);
+}
+.footer-col h1 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: left;
+    width: 95%;
+    padding: 50px;
+    font-size: 3.5vh;
+}
+@media only screen and (max-width: 450px) {
+    .footer-col h1 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.footer-col h2 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    padding-top: 20px;
+    font-size: 3vh;
+}
+.footer-col h3 {
+    text-align: center;
+}
+.footer-col p {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.footer-col ul {
+    text-align: center;
+    padding: 2vh;
+}
+.footer-col li {
+    text-align: center;
+    list-style: none;
+    display: inline-flex;
+    padding: 2vh;
+    font-family: 'Silkscreen', cursive;
+    font-size: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-col a {
+    text-decoration: none;
+    color: white;
+}
+.footer-col a:hover {
+    text-decoration: none;
+    color: #bd0000;
+}
+.footer-col i {
+    font-size: 4vh;
+    cursor: pointer;
+}
+a.contact-ctn:hover {
+    color: rgb(255, 0, 0);
+}
+.footer-col i:hover {
+    color: #ad0000;
 }
