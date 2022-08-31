@@ -77,8 +77,8 @@ body {
     color: aliceblue;
 }
 hr.topnav-bdr {
-    height: 0.2vh;
-    border-style: none;
+    height: 0.1vh;
+    border: none;
     width: 100%;
     background-image: linear-gradient(90deg, white, black, white, black, white);
     margin: 0;
@@ -86,7 +86,7 @@ hr.topnav-bdr {
 
 /* Webpage Intro and Nav Links */
 .intro-hdr-col {
-    background-image: linear-gradient(75deg,rgba(0, 0, 0, 0.708), rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.75)), url("images/ovoid.png");
+    background-image: linear-gradient(75deg,rgba(0, 0, 0, 0.708), rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.75)), url("/images/ovoid.png");
     margin-left: auto;
     margin-top: 15vh;
     margin-bottom: 15vh;
@@ -326,6 +326,7 @@ button.collapsible {
 button.active, button.collapsible:hover {
     filter: brightness(1.2);
     color: #ff0000;
+    border-style: none;
 }
 
 .content {
