@@ -14,7 +14,7 @@
 
  /* Body Style */
 body {
-    background-image: linear-gradient(20deg, rgb(22, 22, 22), rgb(8, 8, 8), rgb(0, 0, 0));
+    background-image: linear-gradient(20deg, rgb(32, 32, 32), rgb(16, 16, 16), rgb(0, 0, 0));
     min-height: 100vh;
     width: 100%;
     margin: 0;
@@ -269,6 +269,12 @@ hr.topnav-bdr {
     font-family: 'Silkscreen', cursive;
     font-size: 2.5vh;
 }
+.about-container a {
+    color: white;
+}
+.about-container a:hover {
+    color: #ff0000;
+}
 /* Demo Sites for Customers */
 
 .demo-gal-col {
@@ -413,7 +419,7 @@ hr.button-div {
     text-shadow: 0px 0px 4px rgb(0, 0, 0);
     margin-top: 20vh;
     text-align: center;
-    margin-bottom: 15vh;
+    margin-bottom: 5vh;
 }
 .afil-link-col h1 {
     margin-bottom: 5vh;
@@ -427,21 +433,24 @@ hr.button-div {
     vertical-align: top;
 }
 .ofc-afil-link img {
-    width: 15vh;
-    height: 15vh;
+    width: 10vh;
+    height: 10vh;
     border-style: dashed;
     border-radius: 50%;
     color: #bd0000;
-    margin-left: 3vh;
-    margin-right: 3vh;
+    margin-left: 4vh;
+    margin-right: 4vh;
     margin-top: 5vh;
     margin-bottom: 1vh;
 }
 @media only screen and (max-width: 450px) {
     .ofc-afil-link img {
-        width: 9vh;
-        height: 9vh;
+        width: 8vh;
+        height: 8vh;
         margin: 4vh;
+    }
+    .ofc-afil-link h3 {
+        font-size: 1.6vh;
     }
     
 }
@@ -463,7 +472,7 @@ hr.button-div {
 .footer-col {
     background-image: linear-gradient(20deg, rgb(0, 0, 0), rgb(50, 50, 50), rgb(87, 87, 87));
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 5vh;
     margin-bottom: 0;
     padding-top: 3vh;
     padding-bottom: 2vh;
@@ -524,6 +533,7 @@ hr.button-div {
 }
 a.contact-ctn:hover {
     color: rgb(255, 0, 0);
+    text-shadow: 0px 2px 5px black;
 }
 .footer-col i:hover {
     color: #ad0000;

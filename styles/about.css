@@ -29,172 +29,267 @@
 
 /* Navigation Bar,
     Styles, fonts, sizes, etc */
-    .topnav {
-        max-height: 7vh;
-        min-height: 5.5vh;
-        min-width: 100%;
-        display: inline-flex;
-        flex-direction: row;
-        background-image: linear-gradient(rgb(0, 0, 0) 10%, rgb(32, 32, 32)60%, rgb(0, 0, 0) 100%);
-    }
-    .topnav h1 {
-        font-size: 2.5vh;
-        color: red;
-        font-family: 'Silkscreen', cursive;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-right: auto;
-        text-align: center;
-        padding-left: 1.5vh;
-        text-shadow: 0px 1px 2px white;
-        padding-bottom: 2px;
-    }
-    @media only screen and (max-width: 340px) {
+.topnav {
+    max-height: 7vh;
+    min-height: 5.5vh;
+    min-width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    background-image: linear-gradient(rgb(0, 0, 0) 10%, rgb(32, 32, 32)60%, rgb(0, 0, 0) 100%);
+}
+.topnav h1 {
+    font-size: 2.5vh;
+    color: red;
+    font-family: 'Silkscreen', cursive;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 1.5vh;
+    text-shadow: 0px 1px 2px white;
+    padding-bottom: 2px;
+}
+@media only screen and (max-width: 340px) {
         .topnav h1 {
             padding-left: 1.4vh;
             padding-right: 1vh;
         }
-    }
-    .topnav a {
-        padding-right: 2vh;
-        color: rgb(170, 170, 170);
-        font-size: 2.2vh;
-        font-family: 'Damion', cursive;
-        margin-top: auto;
-        margin-bottom: auto;
-        text-decoration-line: none;
-    }
-    .topnav a:hover {
-        color: rgb(237, 237, 237);
-        text-decoration: none;
-    }
-    .topnav a.active {
-        color: rgb(255, 255, 255);
-        text-shadow: 1px 2px 2px rgb(101, 101, 101);
-        text-decoration: none;
-    }
-    .topnav i {
-        color: aliceblue;
-    }
-    hr.topnav-bdr {
-        height: 0.1vh;
-        border-style: none;
-        width: 100%;
-        background-image: linear-gradient(90deg, white, black, white, black, white);
-        margin: 0;
-    }
-/* Gallery Grid Style */
-
-.gallery-grid {
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
 }
-.gallery-grid h1 {
-    color: aliceblue;
+.topnav a {
+    padding-right: 2vh;
+    color: rgb(170, 170, 170);
+    font-size: 2.2vh;
     font-family: 'Damion', cursive;
-    font-size: 6vh;
-    font-weight: 500;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration-line: none;
 }
-.gallery-grid p {
-    color: rgb(121, 121, 121);
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 2.4vh;
-    margin-top: 6vh;
-    margin-bottom: 2vh;
-}
-.gallery-grid img {
-    height: 25vh;
-    width: 25vh;
-    margin: 5vh 10vh 10vh;
-    border-radius: 20px;
-    padding: 6px;
-    background-image: linear-gradient(75deg, rgb(6, 6, 6), white, rgb(10, 10, 10));
-    box-shadow: 0 2px 8px rgb(60, 60, 60);
-}
-.gallery-grid img:hover{
-    filter: brightness(1.2);
-    box-shadow: 0 5px 8px rgb(60, 60, 60);
-    cursor: pointer;
-}
-
-/* Demo Sites for Customers */
-
-.demo-gal-col {
-    text-align: center;
-    margin-bottom: 5vh;
-    padding-bottom: 2vh;
-    border-radius: 2%;
-    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(180, 180, 180), rgb(32, 32, 32));
-}
-.demo-gal-col i {
-    color: black;
-    size: 2vh;
-    padding: 3vh;
-}
-.demo-gal-col a {
-    font-family: 'Silkscreen', cursive;
+.topnav a:hover {
+    color: rgb(237, 237, 237);
     text-decoration: none;
-    color: azure;
-    text-shadow: 0px -1px 3px black;
 }
-.demo-gal-col h1 {
-    color: aliceblue;
-    font-family: 'Damion', cursive;
-    font-weight: 400;
-    text-shadow: 0px 2px 2px rgb(0, 0, 0);
-    font-size: 4.4vh;
-    padding-top: 2vh;
-    padding: 1vh;
-}
-button.collapsible {
-    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(180, 180, 180), rgb(32, 32, 32));
+.topnav a.active {
     color: rgb(255, 255, 255);
-    text-shadow: 0px 2px 4px black;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: center;
-    outline: none;
-    font-size: 2.6vh;
-    font-family: 'Ubuntu Condensed', sans-serif;
-  }
-  
-  button.active, button.collapsible:hover {
-    filter: brightness(1.2);
-  }
-
-  .content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
+    text-shadow: 1px 2px 2px rgb(101, 101, 101);
+    text-decoration: none;
+}
+.topnav i {
     color: aliceblue;
-  }
-  .content p {
-    font-size: 1.8vh;
-    font-family: 'Ubuntu Condensed', sans-serif;
-    color: aliceblue;
-    text-shadow: 0px -1px 2px black;
-  }
-  .collapsible:after {
-    content: '\02795';
-    font-size: 13px;
-    color: white;
-    float: right;
-    margin-left: 5px;
-  }
-  button.active:after {
-    content: "\2796";
-  }
-  hr.button-div {
-    height: 2px;
-    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(180, 180, 180), rgb(32, 32, 32));
+   }
+hr.topnav-bdr {
+    height: 0.1vh;
     border-style: none;
-    width: 80%;
-    border: none;
-  }
+    width: 100%;
+    background-image: linear-gradient(90deg, white, black, white, black, white);
+    margin: 0;
+}
+
+/* About Column Gallery Styles and Layout */
+
+.about-col {
+    background-image: linear-gradient(90deg, rgb(163, 0, 0), rgb(255, 0, 0), rgb(154, 0, 0));
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.about-col h1 {
+    font-family: 'Damion', cursive;
+    margin-top: 10vh;
+    font-size: 5vh;
+    text-shadow: 0px 2px 4px black;
+}
+.about-col h2 {
+    font-family: 'Silkscreen', cursive;
+    font-size: 2.2vh;
+    text-shadow: 0px 2px 4px black;
+    padding-top: 4vh;
+}
+.about-col-grid {
+    display: inline-flex;
+}
+.about-col-1, .about-col-2, .about-col-3, .about-col-4 {
+    padding: 3vh;
+    background-position: center;
+    background-size: contain;
+    background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.116), rgba(0, 0, 255, 0.326), rgba(255, 0, 0, 0.281));
+    border-radius: 30px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 25%;
+    box-shadow: 0px 0px 45px rgb(93, 20, 239);
+}
+@media only screen and (max-width: 850px) {
+    .about-col-grid {
+        display: block;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .about-col-1, .about-col-2, .about-col-3, .about-col-4 {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px blue;
+        box-shadow: 0px 0px 74px rgb(41, 4, 115);
+        filter: brightness(1.2);
+    }
+}
+
+/*About Col #1 Styles */
+.about-col-1 {
+    color: black;
+}
+.about-col-1 h1 {
+    font-size: 5vh;
+    margin-bottom: 0;
+    margin-top: 0vh;
+    text-shadow: 0px 1px 3px white;
+}
+.about-col-1 h2 {
+    margin-top: 1.5vh;
+    font-size: 2.5vh;
+    padding: 0px;
+    text-shadow: 0px 1px 3px white;
+}
+.about-col-1 p {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    line-height: 1.5;
+}
+
+/*About Col #2 styles */
+.about-col-2 {
+    color: blue;
+}
+.about-col-2 h1 {
+    font-size: 5vh;
+    margin-bottom: 0;
+    margin-top: 0vh;
+    text-shadow: 0px 1px 3px white;
+}
+.about-col-2 h2 {
+    margin-top: 1.5vh;
+    font-size: 2.5vh;
+    padding: 0px;
+    text-shadow: 0px 1px 3px white;
+}
+.about-col-2 p {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    line-height: 1.5;
+}
+
+/*About Col #3 styles */
+.about-col-3 {
+    color: pink;
+}
+.about-col-3 h1 {
+    font-size: 5vh;
+    margin-bottom: 0;
+    margin-top: 0vh;
+    text-shadow: 0px 1px 3px rgb(0, 0, 0);
+}
+.about-col-3 h2 {
+    margin-top: 1.5vh;
+    font-size: 2.5vh;
+    padding: 0px;
+    text-shadow: 0px 1px 3px rgb(0, 0, 0);
+}
+.about-col-3 p {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    line-height: 1.5;
+}
+
+/*About Col #4 styles */
+.about-col-4 {
+    color: orange;
+}
+.about-col-4 h1 {
+    font-size: 5vh;
+    margin-bottom: 0;
+    margin-top: 0vh;
+    text-shadow: 0px 1px 3px rgb(0, 0, 0);
+}
+.about-col-4 h2 {
+    margin-top: 1.5vh;
+    font-size: 2.5vh;
+    padding: 0px;
+    text-shadow: 0px 1px 3px rgb(0, 0, 0);
+}
+.about-col-4 p {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    line-height: 1.5;
+}
+
+/* Foooter Col Layout and Design */
+
+.footer-col {
+    background-image: linear-gradient(20deg, rgb(0, 0, 0), rgb(50, 50, 50), rgb(87, 87, 87));
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: 0;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 6px black;
+    box-shadow: 0px -2px 5px rgb(111, 111, 111);
+}
+.footer-col h1 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: left;
+    width: 95%;
+    padding: 50px;
+    font-size: 3.5vh;
+}
+@media only screen and (max-width: 650px) {
+    .footer-col h1 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.footer-col h2 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    padding-top: 20px;
+    font-size: 3vh;
+}
+.footer-col h3 {
+    text-align: center;
+}
+.footer-col p {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.footer-col ul {
+    text-align: center;
+    padding: 2vh;
+}
+.footer-col li {
+    text-align: center;
+    list-style: none;
+    display: inline-flex;
+    padding: 2vh;
+    font-family: 'Silkscreen', cursive;
+    font-size: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-col a {
+    text-decoration: none;
+    color: white;
+}
+.footer-col a:hover {
+    text-decoration: none;
+    color: #bd0000;
+}
+.footer-col i {
+    font-size: 4vh;
+    cursor: pointer;
+}
+a.contact-ctn:hover {
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 2px 5px black;
+}
+.footer-col i:hover {
+    color: #ad0000;
+}
   
   
