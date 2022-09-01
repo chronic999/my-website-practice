@@ -23,10 +23,15 @@
             <h2>First Name: <input type="text" id="fname" placeholder="First Name" required/></h2>
             <h3>Last Name: <input type="text" id="lname" placeholder="Last Name" required/></h3>
             <h4>UserEmail: <input type="email" id="email" name="email" placeholder="Email" required/></h4>
-            <h5>Subject: <input type="text" name="subject" id="subject" placeholder="Subject" required> </h5>
+            <label for="subject">Subject: </label>
+                <select id="subject" name="cars">
+                    <option value="default">(choose an option)</option>
+                    <option value="application">Apply for a position</option>
+                    <option value="issues">Issues or Concerns</option>
+                    <option value="suggestions">General Suggestions</option>
+                    <option value="questions">Questions</option>
+                </select>
             <h5>Message: <br><textarea rows="7" cols="40" name="message"></textarea></h5>
-            
-            
             <p>500 characters max</p><hr>
             <input type="submit" name="submit" id="submit">
         </form>
